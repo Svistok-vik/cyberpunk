@@ -1,0 +1,54 @@
+.about {
+    padding-top: 70px;
+
+
+    &__title {
+        margin-bottom: 25px;
+
+        @include laptop {
+            max-width: 620px;
+        }
+
+        
+    }
+
+    &__text {
+        max-width: 952px;
+        margin-bottom: 70px;
+    }
+
+    &__img {
+        display: flex;
+        gap: 32px;
+        margin-bottom: 70px;
+        @include laptop {
+            flex-direction: column;
+         }
+
+        
+    }
+    
+
+    &__img-small {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+
+        @include laptop {
+           display: grid;
+           grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include phones {
+            display: flex;
+        }
+    }
+
+    &__bottom {
+        background-image: url(../img/about/bottom.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 70px;
+    }
+}

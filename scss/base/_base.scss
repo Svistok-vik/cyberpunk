@@ -1,0 +1,61 @@
+body {
+    font-family: var(--font-main);
+}
+
+
+
+.container {
+    max-width: 1352px;
+    padding: 0 36px;
+    margin: 0 auto !important;
+
+    @include phones {
+        padding: 0 12px;
+    }
+}
+
+
+h1, h2 {
+    font-family: var(--font-title);
+    font-size: 62px !important;
+    @include tablets {
+        font-size: 40px !important;
+    }
+
+    @include phones {
+        font-size: 30px !important;
+    }
+}
+
+
+
+p {
+    font-size: 18px !important;
+    line-height: 34px;
+
+    @include phones {
+        font-size: 16px !important;
+    }
+}
+
+span {
+    color: var(--textColor-blue);
+}
+
+.button {
+    font-weight: 700;
+    font-size: 18px;
+
+    
+
+}
+
+.subtitle {
+    color: var(--textColor-blue);
+    font-weight: 700;
+    font-size: 24px;
+
+    @include phones {
+        font-size: 20px;;
+    }
+}

@@ -1,0 +1,54 @@
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 0;
+
+    @include laptop {
+        padding: 40px 0 25px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+
+.footer__left {
+    display: flex;
+    gap: 0 32px ;
+
+    @include phones {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+}
+
+.footer__right {
+    display: flex;
+    gap: 0 32px;
+    
+    @include phones {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}
+
+.footer__phrase {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.footer__bottom {
+    background-color: black;
+
+}
+
+.footer__bottom-phrase {
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size: 12px;
+    padding: 13px 0;
+
+}

@@ -1,0 +1,101 @@
+.promotion {
+    background-color: black;
+    padding: 70px 0;
+    color: white;
+}
+
+.promotion__top {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    margin-bottom: 39px;
+    gap: 32px;
+    @include tablets {
+        flex-direction: column;
+        align-items: start;
+    }
+}
+
+.promotion__img-top {
+    display: none;
+
+    @include tablets {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        // max-width: 342px;
+    }
+}
+
+.promotion__title {
+
+    @include tablets {
+        font-size: 40px !important;
+    }
+
+    @include phones {
+        font-size: 30px !important;
+    }
+    // position: relative;
+    // margin-left: 164px;
+    
+
+    // &::after {
+    //     position: absolute;
+    //     content: url(../img/promotion/promotion-logo.svg);
+
+    //     top: 0;
+    //     left: 0;
+    //     transform: translate(-124%, -37%);
+    // }
+
+
+}
+
+.promotion__text {
+    max-width: 952px;
+    margin-bottom: 38px;
+    line-height: 34px;
+}
+
+.promotion__wrapper {
+    display: grid;
+    grid-template-columns: 460px auto;
+    gap: 25px;
+
+    @include laptop {
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+.promotion__form-wrap {
+    
+    height: 383px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.promotion__img-big {
+    padding-top: 25px;
+    overflow: hidden;
+    text-align: center;
+    max-height: 782px;
+    display: flex;
+    align-items: center;
+
+    @include tablets {
+        display: none;
+    }
+
+    
+
+    &_ps {
+        display: table-cell;
+        vertical-align: middle;
+
+
+    }
+}
+

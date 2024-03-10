@@ -1,0 +1,140 @@
+.header {
+    background-image: url(../img/header/header-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    // max-width: 1920px;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+    animation: changing 50s infinite;
+    min-height: 1000px;
+
+    @include phones {
+        height: 763px;
+    }
+}
+
+@keyframes changing {
+    0% {
+        background-image: url(../img/header/header-01.jpg);
+    }
+
+    35% {
+        background-image: url(../img/header/header-02.jpg);
+    }
+
+    65% {
+        background-image: url(../img/header/header-03.jpg);
+    }
+}
+
+.header__top {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 537px;
+
+    @include tablets {
+        flex-direction: column;
+        gap: 10px;
+
+    }
+}
+
+.links {
+    display: flex;
+    gap: 40px;
+
+    @include tablets {
+        gap: 30px;
+
+    }
+}
+
+.header__more {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 35px;
+    margin-right:332px;
+
+    @include desktop {
+        margin-right:196px;
+    }
+
+    @include laptop {
+        margin: 0;
+    }
+
+    @include tablets {
+        padding: 0;
+    }
+
+    
+
+    
+
+}
+
+.more {
+    background-image: url(../img/header/bc-yellow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 634px;
+    height: 369px;
+    padding: 70px;
+
+    @include tablets {
+        background-image: url(../img/header/bc-yellow-sm.png);
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    @include phones {
+        background-size: inherit;
+        padding: 0;
+    }
+
+
+    &__title {
+        margin-bottom: 25px;
+
+        @include tablets {
+            font-size: 40px !important;
+            text-align: center;
+        }
+
+        @include phones {
+            font-size: 30px !important;
+            width: 295px;
+        }
+    }
+
+    &__btn {
+        color: var(--ui-yellow);
+        background-color: black;
+        width: 272px;
+        height: 78px;
+        font-size: 24px;
+        line-height: 40px;
+        font-weight: 700;
+        display: block;
+        margin: 0 auto;
+
+        @include phones {
+            width: 244px;
+            height: 60px;
+            font-size: 20px;
+        }
+    }
+
+}
+
+
+
+

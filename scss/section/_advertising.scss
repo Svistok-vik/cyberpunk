@@ -1,0 +1,110 @@
+.advertising {
+    background-color: var(--ui-yellow);
+    padding-bottom: 70px;
+}
+
+.advertising__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.top-img {
+    background-image: url(../img/advertising/top.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 70px;
+    margin-bottom: 70px;
+
+}
+
+.advertising__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.advertising__img-big {
+    margin-bottom: 26px;
+
+}
+
+.advertising__img-small {
+    display: flex;
+    gap: 25px;
+
+    @include desktop {
+        
+        justify-content: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+.advertising__right {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.advantages-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.advantages {
+    position: relative;
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: 42px;
+    line-height: 160%;
+
+    &::before {
+        position: absolute;
+
+        top: 0;
+        left: 0;
+
+        transform: translate(-137%, 0%);
+    }
+}
+
+.advantages__title {
+    @include tablets {
+        font-size: 40px !important;
+    }
+
+    @include phones {
+        font-size: 30px !important;
+    }
+}
+
+.advertising__advantages-1::before {
+    content: url(../img/advertising/color_lens.svg)
+}
+
+.advertising__advantages-2::before {
+    content: url(../img/advertising/stars.svg)
+}
+
+.advertising__advantages-3::before {
+    content: url(../img/advertising/auto_awesome.svg)
+}
+
+.advertising__btn {
+    width: 194px;
+    height: 59px;
+    background-color: black;
+    color: var(--ui-yellow);
+}

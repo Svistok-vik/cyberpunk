@@ -1,0 +1,98 @@
+.buy {
+    background-color: black;
+    // background-image: url(../img/buy/buy-img.jpg);
+    // background-repeat: no-repeat;
+    // // background-size: cover;
+    // background-position: left;
+
+
+}
+
+.buy__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+
+    @include laptop {
+        grid-template-columns: 332px auto;
+    }
+
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+.buy__left-img {
+    object-fit: cover; 
+    height: 100%;
+}
+
+.buy__right {
+    padding: 70px 0;
+
+    @include tablets {
+
+        padding: 40px 32px;
+    }
+
+    @include phones {
+        padding: 40px 12px;
+    }
+
+}
+
+.buy__title {
+    color: white;
+    margin-bottom: 25px;
+}
+
+.set {
+    position: relative;
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: 42px;
+    line-height: 160%;
+    color: white;
+    @include phones {
+        font-size: 16px;
+    }
+
+    &::before {
+        position: absolute;
+
+        top: 0;
+        left: 0;
+
+        transform: translate(-137%, 0%);
+    }
+}
+
+.buy__set-1::before {
+    content: url(../img/buy/disk.svg);
+}
+
+.buy__set-2::before {
+    content: url(../img/buy/Group.svg);
+}
+
+.buy__set-3::before {
+    content: url(../img/buy/collections.svg);
+}
+
+.choice-wrapper {
+    margin-top: 55px;
+    max-width: 319px;
+}
+
+.buy__choice-title {
+    margin-bottom: 25px;
+}
+
+.buy__img-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px 0;
+    align-items: center;
+}
